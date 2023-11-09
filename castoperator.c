@@ -7,5 +7,5 @@ int main()
     printf("integer to float cast\n");
     printf(" integer %d in float value is %f\n",a,(float)a);
     printf("float to integer cast\n");
-    printf("float %f in integer value is %d",b,(int)b);
+    printf("float %f in integer value is %d",(int)b);
 }
