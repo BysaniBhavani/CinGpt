@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating</title>
+    <style>
+      html {
+      display: table;
+      margin: auto;
+      }
+      html, body {
+        height: 100%;
+        width : 100%;
+      }
+      body{
+        display:  inline-flex;
+        vertical-align: middle;
+        align-items: center;
+      }
+      img{
+        width: 5%;
+        height: 5%;
+      }
+      .container {
+        text-align: center;
+        vertical-align: middle;
+        border: 3px solid rgba(151, 21, 145, 0.473);
+        padding: 5px;
+        width: 50%;
+      }
+      .container h1{
+        text-decoration: underline;
+        text-shadow: 1px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-variant: small-caps;
+        color: rgb(129, 8, 243);
+      }
+
+    </style>
+  <title>Rating</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Java Script</h1>
+      <img src="star.JPG" alt="*" onclick=myFunction(1) id="star1"/>
+      <img src="star.JPG" alt="*" onclick=myFunction(2) id="star2"/>
+      <img src="star.JPG" alt="*" onclick=myFunction(3) id="star3"/>
+      <img src="star.JPG" alt="*" onclick=myFunction(4) id="star4"/>
+      <img src="star.JPG" alt="*" onclick=myFunction(5) id="star5"/>
+    <p id = "rating"></p>
+  </div>
+  <script>
+    star1 = document.getElementById("star1");
+    star2 = document.getElementById("star2");
+    star3 = document.getElementById("star3");
+    star4 = document.getElementById("star4");
+    star5 = document.getElementById("star5");
+    rating = document.getElementById("rating")
+    function myFunction(x) {
+      if(x==1)
+      {
+        star1.src="yellowStar.jpg";
+        star2.src="star.JPG";
+        star3.src="star.JPG";
+        star4.src="star.JPG";
+        star5.src="star.JPG";
+        rating.innerHTML="Rating is 1/5";
+      }
+      else if(x==2){
+        star1.src="yellowStar.jpg";
+        star2.src="yellowStar.JPG";
+        star3.src="star.JPG";
+        star4.src="star.JPG";
+        star5.src="star.JPG";
+        rating.innerHTML="Rating is 2/5";
+      }
+      else if(x==3){
+        star1.src="yellowStar.jpg";
+        star2.src="yellowStar.JPG";
+        star3.src="yellowStar.JPG";
+        star4.src="star.JPG";
+        star5.src="star.JPG";
+        rating.innerHTML="Rating is 3/5";
+      }else if( x==4){
+        star1.src="yellowStar.jpg";
+        star2.src="yellowStar.JPG";
+        star3.src="yellowStar.JPG";
+        star4.src="yellowStar.JPG";
+        star5.src="star.JPG";
+        rating.innerHTML="Rating is 4/5";
+      }else if(x==5)
+      {
+        star1.src="yellowStar.jpg";
+        star2.src="yellowStar.JPG";
+        star3.src="yellowStar.JPG";
+        star4.src="yellowStar.JPG";
+        star5.src="yellowStar.JPG";
+        rating.innerHTML="Rating is 5\/5";
+      }
+
+    }
+    </script>
+
+</body>
+</html>

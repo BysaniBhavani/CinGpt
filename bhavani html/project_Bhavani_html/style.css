@@ -1,0 +1,48 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+    align-items: center;
+}
+header
+{
+    text-align: center;
+    color: blueviolet;
+}
+header h2:hover
+{
+    background-color: aqua;
+    color :brown;
+    font-stretch:narrower;
+}
+nav {
+    margin: 20px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+nav a:hover
+{
+    color:red;
+    text-decoration: underline;
+}
+section{
+    width: 25%;
+    float: left;
+    border: 1px solid blue;
+    padding: 20px;
+    margin: 5px;
+}
+section h3{
+    text-decoration: underline;
+}
+section ul{
+    background-color: aqua;
+    margin: 5px;
+    padding: 20px;
+}
+section ul li{
+    text-decoration: double;
+}

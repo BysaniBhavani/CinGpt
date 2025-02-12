@@ -1,0 +1,101 @@
+
+        /* Styling the body */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Styling the background image by 
+        giving its url and position */
+        .container {
+            height: 100vh;
+            /* vh stands for viewport height. 
+            This unit is based on the height of the viewport.
+             A value of 1vh is equal to 1% of the viewport height. A value of
+             100vh is equal to 100% of the viewport height. 1vw stands for viewport width. */
+            width: 100%;
+                        /* background-image: url(''); */
+            background-image: url("media/background.png");
+
+            /* Image used: */
+            
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Styling the list tags to the 
+        right of the navigation bar */
+        .nav li {
+            float: right;
+            list-style: none;
+        }
+
+        /* Styling the anchor tags of 
+        the navigation bar */
+        .nav a {
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1rem;
+            /* Rem units are relative units of measurement in CSS that
+             are based on the font size of the root element (<html>). 
+             If the root font size is set to 16px, then 1rem is equivalent to 16px.
+              This relationship makes Rem units a flexible and scalable 
+              way to set sizes for fonts, widths, margins, paddings, 
+              and other properties.
+
+ */
+            font-weight: 550;
+            display: block;
+            padding: 5px 35px;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Giving position and margin 
+        to the content-div */
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 45%;
+        }
+
+        /* Styling the left-col by 
+        giving margin */
+        .left-col {
+            margin-left: 11%;
+        }
+
+        /* Styling the my sound placed 
+        in the left-col */
+        .left-col h2 {
+            font-size: 40px;
+            color: crimson;
+             text-align: center; 
+            
+        }
+
+        /* Styling the right-col */
+        .right-col {
+            float: right;
+            margin-right: 10%;
+            margin-top: -5%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling the text in the right-col */
+        .right-col p {
+            font-size: 21px;
+            color: black;
+            font-weight: 650;
+            margin-right: 20px;
+        }
+
+        /* Styling the cursor type 
+        of the icon to pointer */
+        #icon {
+            cursor: pointer;
+        }
+    

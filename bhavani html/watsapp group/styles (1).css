@@ -1,0 +1,44 @@
+div.main-body {
+    display: grid;
+    /* it will dispaly a grids */
+    grid-template-columns: minmax(300px, auto)1fr; 
+    /* Specifies the size of the columns, and how many columns in a grid layout */
+    /* grid-template-columns: none|auto|max-content|min-content|minmax()|length|percentage|fit-content()|repeat()|subgrid|initial|inherit; */
+    /* minmax()	Defines a size range greater than or equal to a min value and less than or equal to a max value */
+    grid-template-areas: "navbar mainContent";
+    /* Specifies how to display columns and rows, using named grid items */
+    grid-gap: 20px;
+}
+
+nav#navbar {
+    grid-area: navbar;
+    /* Either specifies a name for the grid item, 
+    or this property is a shorthand property for the grid-row-start, 
+    grid-column-start, grid-row-end, and grid-column-end properties */
+    position: fixed;
+}
+
+nav#navbar a {
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+main#main-doc {
+    grid-area: mainContent;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+code {
+    background-color: #CCC;
+    display: block;  
+    /* line by line it will display the output. */
+    padding: 20px;
+};
